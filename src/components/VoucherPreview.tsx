@@ -134,12 +134,15 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
 
           {/* Payment Voucher Label & Voucher No */}
           <div className="flex justify-center items-center mt-1 relative w-full">
-            <div className="bg-[#475569] text-white px-6 h-[32px] rounded-md text-[14px] font-bold print:bg-[#1e3a8a] flex items-center justify-center">
+            <div className="bg-[#475569] text-white px-6 pb-2 h-[32px] rounded-md text-[14px] font-bold print:bg-[#1e3a8a] flex items-center justify-center">
               <span className="leading-none">Payment Voucher</span>
             </div>
             <div className="absolute right-3 flex items-center gap-2">
               <span className="text-[13px] text-[#233876]">Voucher No :</span>
-              <div className="w-[85px] border border-[#1e3a8a] rounded-sm font-bold text-[14px] h-[28px] flex items-center justify-center bg-white">
+              <div
+                className="w-[85px] border border-[#1e3a8a] rounded-sm font-bold text-[14px] h-[28px] flex items-center justify-center bg-white pb-[4px]"
+                style={dataStyle}
+              >
                 <span className="leading-none">{voucherNo}</span>
               </div>
             </div>
