@@ -112,11 +112,11 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
               </div>
             </div>
             {/* Org Info */}
-            <div className="flex-1 text-center flex flex-col items-center">
-              <h1 className="text-[20px] font-bold uppercase leading-none text-[#233876] mb-1">
+            <div className="flex-1 text-center flex flex-col items-center pt-4">
+              <h1 className="text-[22px] font-bold uppercase leading-none text-[#233876] mb-1">
                 {orgName || 'TRINITY PLUS SOCIAL TRUST'}
               </h1>
-              <p className="text-[12px] mt-1 text-[#233876] font-bold italic">
+              <p className="text-[13px] mt-1 text-[#233876] font-bold italic">
                 {orgTagline || 'Glory to God'}
               </p>
               <div className="text-[12px] mt-1 whitespace-nowrap text-[#233876]">
@@ -134,8 +134,8 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
 
           {/* Payment Voucher Label & Voucher No */}
           <div className="flex justify-center items-center mt-1 relative w-full">
-            <div className="bg-[#475569] text-white px-4 h-[28px] rounded-md text-[13px] font-bold print:bg-[#1e3a8a] flex items-center justify-center">
-              Payment Voucher
+            <div className="bg-[#475569] text-white px-6 h-[32px] rounded-md text-[14px] font-bold print:bg-[#1e3a8a] flex items-center justify-center">
+              <span className="leading-none">Payment Voucher</span>
             </div>
             <div className="absolute right-3 flex items-center gap-2">
               <span className="text-[13px] text-[#233876]">Voucher No :</span>
