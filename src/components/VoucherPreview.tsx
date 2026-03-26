@@ -97,13 +97,13 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
 
           <div className="flex justify-between items-start px-2">
             {/* Logo */}
-            <div className="w-[130px] flex flex-col items-center pl-2">
+            <div className="w-[200px] flex flex-col items-center pl-2">
               <img
                 src={logo}
                 style={{
-                  width: '140px',
-                  height: '140px',
-                  objectFit: 'contain',
+                  width: '150px',
+                  height: '90px',
+                  objectFit: 'fill',
                 }}
                 alt="Logo"
               />
@@ -134,7 +134,7 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
 
           {/* Payment Voucher Label & Voucher No */}
           <div className="flex justify-center items-center mt-1 relative w-full">
-            <div className="bg-[#475569] text-white px-6 pb-2 h-[32px] rounded-md text-[14px] font-bold print:bg-[#1e3a8a] flex items-center justify-center">
+            <div className="bg-[#475569] text-white px-6 pb-[12px] h-[32px] rounded-md text-[14px] font-bold print:bg-[#1e3a8a] flex items-center justify-center">
               <span className="leading-none">Payment Voucher</span>
             </div>
             <div className="absolute right-3 flex items-center gap-2">
@@ -154,7 +154,7 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
             <div className="flex items-end mb-[8px]">
               <span className="whitespace-nowrap pb-[2px]">Account Head :</span>
               <div
-                className="flex-1 border-b border-[#1e3a8a] border-dotted mx-2 font-bold px-1 pt-[4px]"
+                className="flex-1 border-b border-[#1e3a8a] border-dotted mx-2 font-bold px-1 pt-[4px] pb-[22px] "
                 style={{ height: '24px', ...dataStyle }}
               >
                 {accountHead}
@@ -162,7 +162,7 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
 
               <span className="whitespace-nowrap pb-[2px] ml-2">Date :</span>
               <div
-                className="w-[120px] border-b border-[#1e3a8a] border-dotted ml-2 font-bold px-1 text-center pt-[4px]"
+                className="w-[120px] border-b border-[#1e3a8a] border-dotted ml-2 font-bold px-1 text-center pt-[4px] pb-[22px]"
                 style={{ height: '24px', ...dataStyle }}
               >
                 {date}
@@ -174,7 +174,7 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
                 Name of the Receiver :
               </span>
               <div
-                className="flex-1 border-b border-[#1e3a8a] border-dotted ml-2 font-bold pl-2 truncate pt-[4px]"
+                className="flex-1 border-b border-[#1e3a8a] border-dotted ml-2 font-bold pl-2 truncate pt-[4px] pb-[22px]"
                 style={{ height: '24px', ...dataStyle }}
               >
                 {receiverName}
@@ -184,7 +184,7 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
             <div className="flex items-end mb-[6px]">
               <span className="whitespace-nowrap pb-[2px]">Address :</span>
               <div
-                className="flex-1 border-b border-[#1e3a8a] border-dotted ml-2 font-bold pl-2 truncate pt-[4px]"
+                className="flex-1 border-b border-[#1e3a8a] border-dotted ml-2 font-bold pl-2 truncate pt-[4px] pb-[22px]"
                 style={{ height: '24px', ...dataStyle }}
               >
                 {address}
@@ -202,7 +202,7 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
                 PAID the sum of Rupees in words
               </span>
               <div
-                className="flex-1 border-b border-[#1e3a8a] border-dotted mx-2 font-bold px-1 truncate pt-[4px]"
+                className="flex-1 border-b border-[#1e3a8a] border-dotted mx-2 font-bold px-1 truncate pt-[4px] pb-[22px]"
                 style={{ height: '24px', ...dataStyle }}
               >
                 {amountInWords}
@@ -235,7 +235,7 @@ const VoucherPreview: React.FC<VoucherPreviewProps> = ({
             <div className="flex items-end mb-[14px]">
               <span className="whitespace-nowrap pb-[2px]">Date</span>
               <div
-                className="w-[120px] border-b border-[#1e3a8a] border-dotted mx-2 font-bold px-1 text-center pt-[4px]"
+                className="w-[120px] border-b border-[#1e3a8a] border-dotted mx-2 font-bold px-1 text-center pt-[4px] pb-[22px]"
                 style={{ height: '24px', ...dataStyle }}
               >
                 {date}
