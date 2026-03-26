@@ -134,12 +134,12 @@ const CreateVoucher: React.FC = () => {
 
                     {/* Right: Live Preview */}
                     {showPreview && (
-                        <section className="h-full overflow-hidden rounded-2xl border border-slate-200/60 shadow-sm bg-white relative flex flex-col bg-slate-100 animate-in fade-in slide-in-from-right-10 duration-500">
+                        <section className="h-full overflow-hidden rounded-2xl border border-slate-200/60 shadow-sm relative flex flex-col bg-slate-100 animate-in fade-in slide-in-from-right-10 duration-500">
                             <VoucherPreview
                                 data1={watchAllFields.voucher1 as VoucherData}
                                 data2={watchAllFields.voucher2 as VoucherData}
-                                onDownloadPDF={() => generatePDF('voucher-canvas', `VOUCHERS-${watchAllFields.voucher1?.voucherNo}-${watchAllFields.voucher2?.voucherNo}`)}
-                                onDownloadPNG={() => generatePNG('voucher-canvas', `VOUCHERS-${watchAllFields.voucher1?.voucherNo}-${watchAllFields.voucher2?.voucherNo}`)}
+                                onDownloadPDF={() => generatePDF('voucher-download-canvas', `VOUCHERS-${watchAllFields.voucher1?.voucherNo}-${watchAllFields.voucher2?.voucherNo}`)}
+                                onDownloadPNG={() => generatePNG('voucher-download-canvas', `VOUCHERS-${watchAllFields.voucher1?.voucherNo}-${watchAllFields.voucher2?.voucherNo}`)}
                                 onPrint={() => printInvoice('voucher-canvas')}
                             />
                         </section>
